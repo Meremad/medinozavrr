@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic JavaScript Chat</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="chat-container">
+        <h1>JavaScript Chat</h1>
+
+        <!-- Chat Messages Area -->
+        <div id="chat-box">
+            <div id="messages"></div>
+        </div>
+
+        <!-- Form for Sending Messages -->
+        <form id="chat-form">
+            <input type="text" id="message-input" placeholder="Type your message here" required>
+            <button type="submit">Send</button>
+        </form>
+
+        <!-- Error Display for Invalid Messages -->
+        <div id="error-message"></div>
+
+        <!-- Button to Change Background Color -->
+        <button id="change-bg-btn">Change Background Color</button>
+
+        <!-- Display Current Date and Time -->
+        <div id="date-time"></div>
+
+        <!-- FAQ Accordion Section -->
+        <div class="faq-section">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <button class="accordion">What is this chat?</button>
+                <div class="panel">
+                    <p>This is a simple chat interface for practicing JavaScript concepts.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="accordion">How does the form work?</button>
+                <div class="panel">
+                    <p>The form collects your message and displays it in the chat box.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Popup Subscription Form -->
+        <button id="subscribe-btn">Subscribe</button>
+        <div id="popup-form" class="popup">
+            <form id="subscription-form">
+                <h3>Subscribe to our newsletter</h3>
+                <input type="email" id="email-input" placeholder="Enter your email" required>
+                <input type="password" id="password-input" placeholder="Enter password" required>
+                <input type="password" id="confirm-password" placeholder="Confirm password" required>
+                <button type="submit">Subscribe</button>
+                <button type="button" id="close-popup">Close</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
